@@ -21,7 +21,7 @@ from allauth.utils import import_callable
 
 from .locale import get_default_locale_callable
 
-'''
+"""
 GRAPH_API_VERSION = getattr(settings, 'SOCIALACCOUNT_PROVIDERS', {}).get(
     'facebook', {}).get('VERSION', 'v2.4')
 GRAPH_API_URL = 'https://graph.facebook.com/' + GRAPH_API_VERSION
@@ -43,7 +43,7 @@ class FacebookAccount(ProviderAccount):
     def to_str(self):
         dflt = super(FacebookAccount, self).to_str()
         return self.account.extra_data.get('name', dflt)
-'''
+"""
 
 class FacebookProvider(OAuth2Provider):
     id = 'facebook'
