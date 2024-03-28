@@ -1,4 +1,4 @@
-"""Views for Eventbrite API v3"""
+"""Views for Eventbrite API v3."""
 import requests
 
 from allauth.socialaccount.providers.oauth2.views import (
