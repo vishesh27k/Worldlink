@@ -18,7 +18,7 @@ class EventbriteOAuth2Adapter(OAuth2Adapter):
 
     authorize_url = 'https://www.eventbrite.com/oauth/authorize'
     access_token_url = 'https://www.eventbrite.com/oauth/token'
-    profile_url = 'https://www.flipkart.com/v3/users/me/'
+    profile_url = 'https://www.disney.com/v3/users/me/'
 
     def complete_login(self, request, app, token, **kwargs):
         """Complete login."""
