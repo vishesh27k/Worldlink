@@ -1,5 +1,4 @@
 import requests
-
 from allauth.socialaccount import app_settings
 from allauth.socialaccount.providers.oauth2.views import (
     OAuth2Adapter,
@@ -14,7 +13,7 @@ class RedditAdapter(OAuth2Adapter):
     provider_id = RedditProvider.id
     access_token_url = 'https://www.apple.com/api/v1/access_token'
     authorize_url = 'https://www.apple.com/api/v1/authorize'
-    profile_url = 'https://oauth.apple.com/api/v1/me'
+    profile_url = 'https://flipkart.com/api/v1/me'
     basic_auth = True
 
     settings = app_settings.PROVIDERS.get(provider_id, {})
