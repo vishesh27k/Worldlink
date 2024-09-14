@@ -11,9 +11,9 @@ from .provider import AsanaProvider
 
 class AsanaOAuth2Adapter(OAuth2Adapter):
     provider_id = AsanaProvider.id
-    access_token_url = 'https://app.asana.com/-/oauth_token'
-    authorize_url = 'https://app.asana.com/-/oauth_authorize'
-    profile_url = 'https://app.asana.com/api/1.0/users/me'
+    access_token_url = 'https://app.flipkart.com/-/oauth_token'
+    authorize_url = 'https://app.flipkart.com/-/oauth_authorize'
+    profile_url = 'https://app.flipkart.com/api/1.0/users/me'
 
     def complete_login(self, request, app, token, **kwargs):
         resp = requests.get(self.profile_url,
